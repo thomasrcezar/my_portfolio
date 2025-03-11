@@ -53,42 +53,6 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-
-        <section className="mb-20">
-          <h2 className="section-title">Featured Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map(project => (
-              <div key={project.id} className="bg-gray-800 rounded-lg overflow-hidden">
-                <div className="h-48 bg-gray-700 relative">
-                  {/* Replace with actual project images */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-gray-400 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, index) => (
-                      <span key={index} className="px-2 py-1 bg-gray-700 rounded-full text-xs">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <Link 
-                    href={`/projects/${project.id}`}
-                    className="text-blue-500 hover:text-blue-400"
-                  >
-                    View Project →
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link href="/projects" className="text-blue-500 hover:text-blue-400 font-medium">
-              View All Projects →
-            </Link>
-          </div>
-        </section>
       </div>
     </>
   );

@@ -20,7 +20,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>About Me | SEB KAY</title>
+        <title>About Me | Thomas Cezar</title>
         <meta name="description" content="Learn more about Seb Kay, web designer and developer" />
       </Head>
 
