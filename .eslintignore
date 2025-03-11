@@ -1,0 +1,5 @@
+# Ignore specific files
+src/pages/about.tsx
+
+# Or ignore all pages
+# src/pages/*
