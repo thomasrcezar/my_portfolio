@@ -3,30 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const projects = [
-  {
-    id: 1,
-    title: 'E-commerce Website',
-    description: 'A modern e-commerce platform built with React and Node.js',
-    image: '/placeholder.jpg',
-    tags: ['React', 'Node.js', 'MongoDB'],
-  },
-  {
-    id: 2,
-    title: 'Portfolio Site',
-    description: 'A responsive portfolio website for a professional photographer',
-    image: '/placeholder.jpg',
-    tags: ['Next.js', 'Tailwind CSS'],
-  },
-  {
-    id: 3,
-    title: 'Task Management App',
-    description: 'A productivity application with drag-and-drop functionality',
-    image: '/placeholder.jpg',
-    tags: ['React', 'TypeScript', 'Firebase'],
-  },
-];
-
 const Home: NextPage = () => {
   return (
     <>

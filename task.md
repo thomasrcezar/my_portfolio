@@ -5,8 +5,8 @@
 - [x] Set up project directory structure
 - [x] Configure Tailwind CSS
 - [x] Set up Git repository
-- [ ] Configure ESLint and Prettier
-- [ ] Set up environment variables
+- [x] Configure ESLint and Prettier
+- [x] Set up environment variables
 
 ## Internationalization (i18n)
 - [ ] Set up Next.js internationalization routing
