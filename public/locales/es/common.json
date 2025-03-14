@@ -1,0 +1,49 @@
+{
+    "navigation": {
+      "home": "Inicio",
+      "about": "Sobre Mí",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "greeting": "Hola, soy",
+      "name": "Thomas Cezar",
+      "title": "Desarrollador Full Stack",
+      "description": "Construyo aplicaciones web modernas y responsivas con Next.js, React y TypeScript.",
+      "cta": "Ver Mi Trabajo",
+      "contact": "Contáctame"
+    },
+    "about": {
+      "title": "Sobre Mí",
+      "subtitle": "Conóceme",
+      "bio": "Soy un desarrollador full-stack apasionado con experiencia en tecnologías web modernas. Me encanta crear aplicaciones intuitivas y fáciles de usar que resuelvan problemas del mundo real.",
+      "skills_title": "Mis Habilidades"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Mi trabajo reciente",
+      "view_all": "Ver Todos los Proyectos",
+      "view_project": "Ver Proyecto",
+      "source_code": "Código Fuente"
+    },
+    "contact": {
+      "title": "Contáctame",
+      "subtitle": "Ponte en contacto",
+      "name_label": "Tu Nombre",
+      "email_label": "Tu Email",
+      "message_label": "Mensaje",
+      "send_button": "Enviar Mensaje",
+      "success_message": "¡Gracias! Tu mensaje ha sido enviado.",
+      "error_message": "Algo salió mal. Por favor, inténtalo de nuevo."
+    },
+    "footer": {
+      "rights": "Todos los derechos reservados",
+      "made_with": "Hecho con"
+    },
+    "language": {
+      "en": "Inglés",
+      "es": "Español",
+      "pt": "Portugués"
+    }
+  }
+  
