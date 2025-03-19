@@ -17,11 +17,11 @@
 - [ ] Test language switching functionality
 
 ## Core Components
-- [ ] Create responsive layout component
-- [ ] Implement header/navigation component with language selector
-- [ ] Build footer component with multi-language support
-- [ ] Create theme provider (dark/light mode)
-- [ ] Implement responsive sidebar/menu
+- [x] Create responsive layout component
+- [x] Implement header/navigation component with language selector
+- [x] Build footer component with multi-language support
+- [x] Create theme provider (dark/light mode)
+- [x] Implement responsive sidebar/menu
 
 ## Home Page
 - [ ] Design and implement hero section with translations
