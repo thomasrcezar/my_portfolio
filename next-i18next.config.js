@@ -5,5 +5,5 @@ module.exports = {
     localeDetection: true,
   },
   defaultNS: 'common',
-  localePath: './public/locales',
+  localePath: 'public/locales',
 };

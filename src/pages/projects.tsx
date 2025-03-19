@@ -1,7 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // Use the same projects data structure from your index page
 // You might want to move this to a shared data file later
 const projects = [
@@ -100,6 +101,13 @@ const Projects: NextPage = () => {
       </div>
     </>
   );
+};
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'en', ['common'])),
+    },
+  };
 };
 
 export default Projects;

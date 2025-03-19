@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
+import { GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 // Import the dynamic content from aboutData.json
 import aboutData from '../data/aboutData.json';
 // Define the About page component
@@ -86,4 +87,11 @@ const About: NextPage = () => {
   );
 };
 
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || 'en', ['common'])),
+    },
+  };
+};
 export default About;

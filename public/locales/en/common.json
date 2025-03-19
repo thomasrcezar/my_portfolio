@@ -3,12 +3,14 @@
       "home": "Home",
       "about": "About",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "open_menu": "Open menu",
+      "close_menu": "Close menu"
     },
     "hero": {
       "greeting": "Hello, I'm",
       "name": "Thomas Cezar",
-      "title": "Full Stack Developer",
+      "title": "Developer & Commissining Engineer",
       "description": "I build modern, responsive web applications with Next.js, React, and TypeScript.",
       "cta": "View My Work",
       "contact": "Contact Me"

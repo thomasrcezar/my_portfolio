@@ -9,10 +9,10 @@
 - [x] Set up environment variables
 
 ## Internationalization (i18n)
-- [ ] Set up Next.js internationalization routing
-- [ ] Create translation files for English, Spanish, and Portuguese
-- [ ] Implement language switcher component
-- [ ] Create translation utility functions
+- [x] Set up Next.js internationalization routing
+- [x] Create translation files for English, Spanish, and Portuguese
+- [x] Implement language switcher component
+- [x] Create translation utility functions
 - [ ] Ensure all content is translation-ready
 - [ ] Test language switching functionality
 
