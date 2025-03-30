@@ -24,11 +24,34 @@
       "background_content_3": "I believe in clean, efficient code and thoughtful design that puts the user experience first. Every project I take on receives my full attention and dedication to quality.",
       "skills_title": "My Skills",
       "skills_frontend_category": "Frontend",
-      "skills_frontend_items": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "SCSS"],
+      "skills_frontend_items": [
+        { "name": "HTML5", "rating": 5 },
+        { "name": "CSS3", "rating": 5 },
+        { "name": "JavaScript", "rating": 5 },
+        { "name": "TypeScript", "rating": 4 },
+        { "name": "React", "rating": 5 },
+        { "name": "Next.js", "rating": 5 },
+        { "name": "Tailwind CSS", "rating": 4 },
+        { "name": "SCSS", "rating": 4 }
+      ],
       "skills_backend_category": "Backend",
-      "skills_backend_items": ["Node.js", "Express", "MongoDB", "PostgreSQL", "RESTful APIs", "GraphQL"],
+      "skills_backend_items": [
+        { "name": "Node.js", "rating": 4 },
+        { "name": "Express", "rating": 4 },
+        { "name": "MongoDB", "rating": 3 },
+        { "name": "PostgreSQL", "rating": 3 },
+        { "name": "RESTful APIs", "rating": 4 },
+        { "name": "GraphQL", "rating": 3 }
+      ],
       "skills_tools_category": "Tools & Methods",
-      "skills_tools_items": ["Git", "GitHub", "VS Code", "Figma", "Responsive Design", "Agile Development"],
+      "skills_tools_items": [
+        { "name": "Git", "rating": 5 },
+        { "name": "GitHub", "rating": 5 },
+        { "name": "VS Code", "rating": 5 },
+        { "name": "Figma", "rating": 3 },
+        { "name": "Responsive Design", "rating": 5 },
+        { "name": "Agile Development", "rating": 4 }
+      ],
       "approach_title": "My Approach",
       "approach_user_centered_title": "User-Centered Design",
       "approach_user_centered_content": "I create websites with the end user in mind, focusing on intuitive navigation, accessibility, and engaging experiences.",

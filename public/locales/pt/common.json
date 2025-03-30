@@ -22,11 +22,34 @@
       "background_content_3": "[PT] Acredito em código limpo e eficiente e em design cuidadoso que coloca a experiência do usuário em primeiro lugar. Cada projeto que assumo recebe minha total atenção e dedicação à qualidade.",
       "skills_title": "Minhas Habilidades",
       "skills_frontend_category": "[PT] Frontend",
-      "skills_frontend_items": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "SCSS"],
+      "skills_frontend_items": [
+        { "name": "[PT] HTML5", "rating": 5 },
+        { "name": "[PT] CSS3", "rating": 5 },
+        { "name": "[PT] JavaScript", "rating": 5 },
+        { "name": "[PT] TypeScript", "rating": 4 },
+        { "name": "[PT] React", "rating": 5 },
+        { "name": "[PT] Next.js", "rating": 5 },
+        { "name": "[PT] Tailwind CSS", "rating": 4 },
+        { "name": "[PT] SCSS", "rating": 4 }
+      ],
       "skills_backend_category": "[PT] Backend",
-      "skills_backend_items": ["Node.js", "Express", "MongoDB", "PostgreSQL", "RESTful APIs", "GraphQL"],
+      "skills_backend_items": [
+        { "name": "[PT] Node.js", "rating": 4 },
+        { "name": "[PT] Express", "rating": 4 },
+        { "name": "[PT] MongoDB", "rating": 3 },
+        { "name": "[PT] PostgreSQL", "rating": 3 },
+        { "name": "[PT] RESTful APIs", "rating": 4 },
+        { "name": "[PT] GraphQL", "rating": 3 }
+      ],
       "skills_tools_category": "[PT] Ferramentas e Métodos",
-      "skills_tools_items": ["Git", "GitHub", "VS Code", "Figma", "Design Responsivo", "Desenvolvimento Ágil"],
+      "skills_tools_items": [
+        { "name": "[PT] Git", "rating": 5 },
+        { "name": "[PT] GitHub", "rating": 5 },
+        { "name": "[PT] VS Code", "rating": 5 },
+        { "name": "[PT] Figma", "rating": 3 },
+        { "name": "[PT] Design Responsivo", "rating": 5 },
+        { "name": "[PT] Desenvolvimento Ágil", "rating": 4 }
+      ],
       "approach_title": "[PT] Minha Abordagem",
       "approach_user_centered_title": "[PT] Design Centrado no Usuário",
       "approach_user_centered_content": "[PT] Crio sites com o usuário final em mente, focando em navegação intuitiva, acessibilidade e experiências envolventes.",

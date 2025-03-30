@@ -44,11 +44,11 @@
 - [x] Create project showcase with screenshots (Image array added to data, detail page displays images)
 
 ## Skills Section
-- [ ] Create skills categorization
-- [ ] Implement skill rating visualization
-- [ ] Add skill filtering or grouping
-- [ ] Create animated skill progress indicators
-- [ ] Ensure skill descriptions are translated
+- [x] Create skills categorization (Already present on About page)
+- [x] Implement skill rating visualization (Replaced stars with progress bars)
+- [x] Add skill filtering or grouping (Filtering by category added)
+- [x] Create animated skill progress indicators (Implemented with progress bars)
+- [ ] Ensure skill descriptions are translated (Skipped for now)
 
 ## Contact Section
 - [ ] Create contact form with multi-language labels and placeholders

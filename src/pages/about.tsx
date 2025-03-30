@@ -3,18 +3,39 @@ import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { useState, useMemo } from 'react'; // Import useState and useMemo
 import Timeline from '../components/sections/Timeline'; // Import the Timeline component
+import { motion } from 'framer-motion'; // Import motion for animations
+
+// Define the structure for a skill item from translations
+interface SkillItem {
+  name: string;
+  rating: number;
+}
+
 // Define the About page component
 const About: NextPage = () => {
   const { t } = useTranslation('common');
+  const [selectedSkillCategory, setSelectedSkillCategory] = useState<string>('All'); // State for filter
 
   // Safely access nested translation keys
   const backgroundContentKeys = ['about.background_content_1', 'about.background_content_2', 'about.background_content_3'];
-  const skills = [
+  const allSkillGroups = useMemo(() => [
     { categoryKey: 'about.skills_frontend_category', itemsKey: 'about.skills_frontend_items' },
     { categoryKey: 'about.skills_backend_category', itemsKey: 'about.skills_backend_items' },
     { categoryKey: 'about.skills_tools_category', itemsKey: 'about.skills_tools_items' },
-  ];
+  ], []); // Memoize the skill groups structure
+
+  const skillCategories = useMemo(() => ['All', ...allSkillGroups.map(group => t(group.categoryKey))], [t, allSkillGroups]);
+
+  // Filter skill groups based on selection
+  const filteredSkillGroups = useMemo(() => {
+    if (selectedSkillCategory === 'All') {
+      return allSkillGroups;
+    }
+    return allSkillGroups.filter(group => t(group.categoryKey) === selectedSkillCategory);
+  }, [selectedSkillCategory, t, allSkillGroups]);
+
   const approach = [
     { titleKey: 'about.approach_user_centered_title', contentKey: 'about.approach_user_centered_content' },
     { titleKey: 'about.approach_modern_tech_title', contentKey: 'about.approach_modern_tech_content' },
@@ -65,21 +86,55 @@ const About: NextPage = () => {
             <h2 className="text-3xl font-bold">{t('about.skills_title')}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Map through skills data to display each skill group */}
-            {skills.map((skillGroup, index) => (
-              <div key={index} className="bg-gray-800 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4 text-blue-400">{t(skillGroup.categoryKey)}</h3>
-                <ul className="space-y-2">
-                  {/* Map through each skill in the skill group */}
-                  {(t(skillGroup.itemsKey, { returnObjects: true }) as string[]).map((skill, skillIndex) => (
-                    <li key={skillIndex} className="text-gray-300 flex items-center">
-                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      {skill} {/* Display the translated skill */}
+          {/* Skill Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            {skillCategories.map(category => (
+              <button
+                key={category}
+                onClick={() => setSelectedSkillCategory(category)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition duration-200 ease-in-out ${
+                  selectedSkillCategory === category
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                }`}
+              >
+                {category === 'All' ? t('projects.filter_all') : category} {/* Use existing 'All' translation */}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Map through filtered skills data to display each skill group */}
+            {filteredSkillGroups.map((skillGroup, index) => (
+              <motion.div
+                key={t(skillGroup.categoryKey)} // Use translated category as key for animation consistency
+                className="bg-gray-800 p-6 rounded-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
+                <h3 className="text-xl font-bold mb-5 text-blue-400">{t(skillGroup.categoryKey)}</h3>
+                <ul className="space-y-4"> {/* Increased spacing */}
+                  {/* Map through each skill object in the skill group */}
+                  {(t(skillGroup.itemsKey, { returnObjects: true }) as SkillItem[]).map((skill, skillIndex) => (
+                    <li key={skillIndex} className="text-gray-300">
+                      <div className="flex justify-between items-center mb-1">
+                        <span>{skill.name}</span>
+                        <span className="text-xs font-semibold text-blue-300">{skill.rating * 20}%</span> {/* Show percentage */}
+                      </div>
+                      {/* Progress Bar */}
+                      <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                        <motion.div
+                          className="bg-blue-500 h-2 rounded-full"
+                          initial={{ width: 0 }}
+                          animate={{ width: `${skill.rating * 20}%` }} // Animate width based on rating
+                          transition={{ duration: 0.5, ease: "easeOut", delay: skillIndex * 0.05 }}
+                        />
+                      </div>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
