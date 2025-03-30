@@ -17,9 +17,50 @@
     },
     "about": {
       "title": "About Me",
-      "subtitle": "Get to know me",
-      "bio": "I'm a passionate full-stack developer with expertise in modern web technologies. I love creating intuitive, user-friendly applications that solve real-world problems.",
-      "skills_title": "My Skills"
+      "meta_description": "Learn more about Thomas Cezar, a passionate web designer and developer with over 8 years of experience in creating beautiful, functional websites and applications.",
+      "background_title": "My Background",
+      "background_content_1": "I'm a passionate web designer and developer based in Southampton, UK with over 8 years of experience creating beautiful, functional websites and applications.",
+      "background_content_2": "After graduating with a degree in Computer Science, I worked with several agencies before deciding to focus on creating bespoke websites for clients who need a unique online presence.",
+      "background_content_3": "I believe in clean, efficient code and thoughtful design that puts the user experience first. Every project I take on receives my full attention and dedication to quality.",
+      "skills_title": "My Skills",
+      "skills_frontend_category": "Frontend",
+      "skills_frontend_items": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "SCSS"],
+      "skills_backend_category": "Backend",
+      "skills_backend_items": ["Node.js", "Express", "MongoDB", "PostgreSQL", "RESTful APIs", "GraphQL"],
+      "skills_tools_category": "Tools & Methods",
+      "skills_tools_items": ["Git", "GitHub", "VS Code", "Figma", "Responsive Design", "Agile Development"],
+      "approach_title": "My Approach",
+      "approach_user_centered_title": "User-Centered Design",
+      "approach_user_centered_content": "I create websites with the end user in mind, focusing on intuitive navigation, accessibility, and engaging experiences.",
+      "approach_modern_tech_title": "Modern Technologies",
+      "approach_modern_tech_content": "I stay up-to-date with the latest web technologies and best practices to deliver cutting-edge solutions.",
+      "approach_collaborative_title": "Collaborative Process",
+      "approach_collaborative_content": "I work closely with clients throughout the development process, ensuring their vision is realized at every step.",
+      "timeline_title": "Education & Experience",
+      "timeline_items": [
+        {
+          "type": "experience",
+          "date": "2021 - Present",
+          "title": "Lead Web Developer",
+          "institution": "Creative Solutions Ltd.",
+          "description": "Leading the frontend team, architecting scalable solutions, and mentoring junior developers."
+        },
+        {
+          "type": "experience",
+          "date": "2018 - 2021",
+          "title": "Full Stack Developer",
+          "institution": "Innovatech",
+          "description": "Developed and maintained web applications using React, Node.js, and various databases."
+        },
+        {
+          "type": "education",
+          "date": "2014 - 2018",
+          "title": "BSc in Computer Science",
+          "institution": "University of Southampton",
+          "description": "Graduated with First Class Honours. Focused on software engineering and web technologies."
+        }
+      ],
+      "resume_button": "Download Resume"
     },
     "projects": {
       "title": "Projects",

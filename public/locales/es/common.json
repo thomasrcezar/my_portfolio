@@ -15,9 +15,50 @@
     },
     "about": {
       "title": "Sobre Mí",
-      "subtitle": "Conóceme",
-      "bio": "Soy un desarrollador full-stack apasionado con experiencia en tecnologías web modernas. Me encanta crear aplicaciones intuitivas y fáciles de usar que resuelvan problemas del mundo real.",
-      "skills_title": "Mis Habilidades"
+      "meta_description": "[ES] Aprende más sobre Thomas Cezar, un apasionado diseñador y desarrollador web con más de 8 años de experiencia en la creación de sitios web y aplicaciones hermosos y funcionales.",
+      "background_title": "[ES] Mi Trayectoria",
+      "background_content_1": "[ES] Soy un apasionado diseñador y desarrollador web con sede en Southampton, Reino Unido, con más de 8 años de experiencia creando sitios web y aplicaciones hermosos y funcionales.",
+      "background_content_2": "[ES] Después de graduarme con un título en Ciencias de la Computación, trabajé con varias agencias antes de decidir centrarme en la creación de sitios web a medida para clientes que necesitan una presencia en línea única.",
+      "background_content_3": "[ES] Creo en el código limpio y eficiente y en el diseño reflexivo que prioriza la experiencia del usuario. Cada proyecto que asumo recibe toda mi atención y dedicación a la calidad.",
+      "skills_title": "Mis Habilidades",
+      "skills_frontend_category": "[ES] Frontend",
+      "skills_frontend_items": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "SCSS"],
+      "skills_backend_category": "[ES] Backend",
+      "skills_backend_items": ["Node.js", "Express", "MongoDB", "PostgreSQL", "RESTful APIs", "GraphQL"],
+      "skills_tools_category": "[ES] Herramientas y Métodos",
+      "skills_tools_items": ["Git", "GitHub", "VS Code", "Figma", "Diseño Responsivo", "Desarrollo Ágil"],
+      "approach_title": "[ES] Mi Enfoque",
+      "approach_user_centered_title": "[ES] Diseño Centrado en el Usuario",
+      "approach_user_centered_content": "[ES] Creo sitios web pensando en el usuario final, centrándome en la navegación intuitiva, la accesibilidad y las experiencias atractivas.",
+      "approach_modern_tech_title": "[ES] Tecnologías Modernas",
+      "approach_modern_tech_content": "[ES] Me mantengo actualizado con las últimas tecnologías web y las mejores prácticas para ofrecer soluciones de vanguardia.",
+      "approach_collaborative_title": "[ES] Proceso Colaborativo",
+      "approach_collaborative_content": "[ES] Trabajo en estrecha colaboración con los clientes durante todo el proceso de desarrollo, asegurando que su visión se realice en cada paso.",
+      "timeline_title": "[ES] Educación y Experiencia",
+      "timeline_items": [
+        {
+          "type": "experience",
+          "date": "2021 - Presente",
+          "title": "[ES] Desarrollador Web Principal",
+          "institution": "[ES] Creative Solutions Ltd.",
+          "description": "[ES] Liderando el equipo frontend, diseñando soluciones escalables y mentorizando a desarrolladores junior."
+        },
+        {
+          "type": "experience",
+          "date": "2018 - 2021",
+          "title": "[ES] Desarrollador Full Stack",
+          "institution": "[ES] Innovatech",
+          "description": "[ES] Desarrollé y mantuve aplicaciones web utilizando React, Node.js y varias bases de datos."
+        },
+        {
+          "type": "education",
+          "date": "2014 - 2018",
+          "title": "[ES] BSc en Ciencias de la Computación",
+          "institution": "[ES] Universidad de Southampton",
+          "description": "[ES] Graduado con Honores de Primera Clase. Enfocado en ingeniería de software y tecnologías web."
+        }
+      ],
+      "resume_button": "[ES] Descargar CV"
     },
     "projects": {
       "title": "Proyectos",
@@ -46,4 +87,3 @@
       "pt": "Portugués"
     }
   }
-  
