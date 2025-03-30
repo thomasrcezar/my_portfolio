@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, t }) => {
       <div className="h-48 bg-gray-700 relative">
         {/* Placeholder for project image */}
         <Image
-          src={project.image}
+          src={project.images[0]} // Use the first image for the card preview
           alt={t(project.titleKey)}
           layout="fill"
           objectFit="cover"

@@ -37,11 +37,11 @@
 - [x] Create downloadable resume option in all three languages (Button added, i18n structure ready, needs resume files)
 
 ## Projects Section
-- [ ] Design projects grid/list view
-- [ ] Create project card component with multi-language descriptions
-- [ ] Implement project filtering functionality
-- [ ] Add project detail pages with full translations
-- [ ] Create project showcase with screenshots
+- [x] Design projects grid/list view (Grid implemented on main projects page)
+- [x] Create project card component with multi-language descriptions (Component created and integrated)
+- [x] Implement project filtering functionality (Tag-based filtering added)
+- [x] Add project detail pages with full translations (Dynamic pages created, basic structure and i18n ready)
+- [x] Create project showcase with screenshots (Image array added to data, detail page displays images)
 
 ## Skills Section
 - [ ] Create skills categorization

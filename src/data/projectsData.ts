@@ -2,7 +2,7 @@ export interface Project {
   id: number;
   titleKey: string; // Translation key for title
   descriptionKey: string; // Translation key for description
-  image: string; // Keep image path for now
+  images: string[]; // Array of image paths for showcase
   tags: string[]; // Tags can remain as strings for now, or be keys if needed
   slug: string; // Slug for linking to project detail page
 }
@@ -12,7 +12,7 @@ export const projectsData: Project[] = [
     id: 1,
     titleKey: 'projects.project_1.title',
     descriptionKey: 'projects.project_1.description',
-    image: '/placeholder.jpg', // Replace with actual image paths later
+    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'], // Placeholder images
     tags: ['React', 'Node.js', 'MongoDB'],
     slug: 'e-commerce-website',
   },
@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     id: 2,
     titleKey: 'projects.project_2.title',
     descriptionKey: 'projects.project_2.description',
-    image: '/placeholder.jpg',
+    images: ['/placeholder1.jpg', '/placeholder2.jpg'],
     tags: ['Next.js', 'Tailwind CSS'],
     slug: 'portfolio-site',
   },
@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     id: 3,
     titleKey: 'projects.project_3.title',
     descriptionKey: 'projects.project_3.description',
-    image: '/placeholder.jpg',
+    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'],
     tags: ['React', 'TypeScript', 'Firebase'],
     slug: 'task-management-app',
   },
@@ -36,7 +36,7 @@ export const projectsData: Project[] = [
     id: 4,
     titleKey: 'projects.project_4.title',
     descriptionKey: 'projects.project_4.description',
-    image: '/placeholder.jpg',
+    images: ['/placeholder1.jpg'],
     tags: ['JavaScript', 'APIs', 'CSS Grid'],
     slug: 'weather-dashboard',
   },
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     id: 5,
     titleKey: 'projects.project_5.title',
     descriptionKey: 'projects.project_5.description',
-    image: '/placeholder.jpg',
+    images: ['/placeholder1.jpg', '/placeholder2.jpg'],
     tags: ['Next.js', 'Markdown', 'Headless CMS'],
     slug: 'blog-platform',
   },
@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
     id: 6,
     titleKey: 'projects.project_6.title',
     descriptionKey: 'projects.project_6.description',
-    image: '/placeholder.jpg',
+    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'],
     tags: ['React', 'Chart.js', 'REST APIs'],
     slug: 'social-media-dashboard',
   },
