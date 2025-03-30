@@ -24,10 +24,10 @@
 - [x] Implement responsive sidebar/menu
 
 ## Home Page
-- [ ] Design and implement hero section with translations
-- [ ] Create animated introduction in all three languages
-- [ ] Add call-to-action buttons with proper translations
-- [ ] Implement featured projects preview with language support
+- [x] Design and implement hero section with translations
+- [x] Create animated introduction in all three languages
+- [x] Add call-to-action buttons with proper translations
+- [x] Implement featured projects preview with language support
 
 ## About Me Section
 - [ ] Create about page layout

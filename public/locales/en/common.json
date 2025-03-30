@@ -26,7 +26,32 @@
       "subtitle": "My recent work",
       "view_all": "View All Projects",
       "view_project": "View Project",
-      "source_code": "Source Code"
+      "source_code": "Source Code",
+      "featured_title": "Featured Projects",
+      "project_1": {
+        "title": "E-commerce Website",
+        "description": "A modern e-commerce platform built with React and Node.js"
+      },
+      "project_2": {
+        "title": "Portfolio Site",
+        "description": "A responsive portfolio website for a professional photographer"
+      },
+      "project_3": {
+        "title": "Task Management App",
+        "description": "A productivity application with drag-and-drop functionality"
+      },
+      "project_4": {
+        "title": "Weather Dashboard",
+        "description": "Real-time weather application with interactive maps"
+      },
+      "project_5": {
+        "title": "Blog Platform",
+        "description": "Full-featured blogging platform with CMS integration"
+      },
+      "project_6": {
+        "title": "Social Media Dashboard",
+        "description": "Analytics dashboard for tracking social media performance"
+      }
     },
     "contact": {
       "title": "Contact Me",
@@ -48,4 +73,3 @@
       "pt": "Portuguese"
     }
   }
-  
