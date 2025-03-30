@@ -126,7 +126,11 @@
       "message_label": "Message",
       "send_button": "Send Message",
       "success_message": "Thank you! Your message has been sent.",
-      "error_message": "Something went wrong. Please try again."
+      "error_message": "Something went wrong. Please try again.",
+      "validation_required": "This field is required.",
+      "validation_email": "Please enter a valid email address.",
+      "social_title": "Connect with me",
+      "whatsapp": "Chat on WhatsApp"
     },
     "footer": {
       "rights": "All rights reserved",

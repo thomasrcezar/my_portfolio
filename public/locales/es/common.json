@@ -99,7 +99,11 @@
       "message_label": "Mensaje",
       "send_button": "Enviar Mensaje",
       "success_message": "¡Gracias! Tu mensaje ha sido enviado.",
-      "error_message": "Algo salió mal. Por favor, inténtalo de nuevo."
+      "error_message": "Algo salió mal. Por favor, inténtalo de nuevo.",
+      "validation_required": "[ES] Este campo es obligatorio.",
+      "validation_email": "[ES] Por favor, introduce una dirección de correo electrónico válida.",
+      "social_title": "[ES] Conecta conmigo",
+      "whatsapp": "[ES] Chatea en WhatsApp"
     },
     "footer": {
       "rights": "Todos los derechos reservados",

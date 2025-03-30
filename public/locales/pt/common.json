@@ -99,7 +99,11 @@
       "message_label": "Mensagem",
       "send_button": "Enviar Mensagem",
       "success_message": "Obrigado! Sua mensagem foi enviada.",
-      "error_message": "Algo deu errado. Por favor, tente novamente."
+      "error_message": "Algo deu errado. Por favor, tente novamente.",
+      "validation_required": "[PT] Este campo é obrigatório.",
+      "validation_email": "[PT] Por favor, insira um endereço de e-mail válido.",
+      "social_title": "[PT] Conecte-se comigo",
+      "whatsapp": "[PT] Converse no WhatsApp"
     },
     "footer": {
       "rights": "Todos os direitos reservados",
