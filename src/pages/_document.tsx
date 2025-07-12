@@ -3,12 +3,15 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
+    const locale = ctx.locale || 'en'; // Get locale from context, default to 'en'
+    return { ...initialProps, locale }; // Pass locale as a prop
   }
 
   render() {
+    // Access locale passed from getInitialProps
+    const locale = this.props.locale || 'en';
     return (
-      <Html lang="en">
+      <Html lang={locale}> {/* Use dynamic locale */}
         <Head>
           <meta charSet="utf-8" />
           <meta name="description" content="Developer portfolio" />

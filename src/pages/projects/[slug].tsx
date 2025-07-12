@@ -55,8 +55,8 @@ const ProjectDetail: NextPage<ProjectDetailProps> = ({ project }) => {
             <Image
               src={project.images[0]} // Use the first project image
               alt={t(project.titleKey)}
-              layout="fill"
-              objectFit="cover"
+              fill // Use fill instead of layout="fill"
+              style={{ objectFit: 'cover' }} // Use style prop for objectFit
               priority // Prioritize loading the main image
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
@@ -69,8 +69,8 @@ const ProjectDetail: NextPage<ProjectDetailProps> = ({ project }) => {
                   <Image
                     src={imgSrc}
                     alt={`${t(project.titleKey)} - Screenshot ${index + 2}`}
-                    layout="fill"
-                    objectFit="cover"
+                    fill // Use fill instead of layout="fill"
+                    style={{ objectFit: 'cover' }} // Use style prop for objectFit
                   />
                 </div>
               ))}

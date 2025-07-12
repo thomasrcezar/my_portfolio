@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image'; // Import the Image component
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
@@ -74,7 +75,15 @@ const About: NextPage = () => {
 
             {/* Image section */}
             <div className="relative h-80 bg-gray-800 rounded-lg overflow-hidden">
-              <img src="/profile.jpg" alt="Thomas Cezar Profile" className="w-full h-full object-cover" />
+              {/* Replace img with Image component */}
+              <Image
+                src="/Profile.jpg" // Corrected filename casing
+                alt={t('about.profile_alt') || "Thomas Cezar Profile"} // Use translation for alt text
+                fill // Use fill instead of layout="fill"
+                style={{ objectFit: 'contain' }} // Use style prop for objectFit
+                priority // Prioritize loading if above the fold (adjust if needed)
+              />
+              {/* Optional: Keep overlay if desired */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent"></div>
             </div>
           </div>

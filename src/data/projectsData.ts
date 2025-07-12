@@ -12,7 +12,7 @@ export const projectsData: Project[] = [
     id: 1,
     titleKey: 'projects.project_1.title',
     descriptionKey: 'projects.project_1.description',
-    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'], // Placeholder images
+    images: ['/placeholder1.svg', '/placeholder2.svg', '/placeholder3.svg'], // Use SVG placeholders
     tags: ['React', 'Node.js', 'MongoDB'],
     slug: 'e-commerce-website',
   },
@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     id: 2,
     titleKey: 'projects.project_2.title',
     descriptionKey: 'projects.project_2.description',
-    images: ['/placeholder1.jpg', '/placeholder2.jpg'],
+    images: ['/placeholder1.svg', '/placeholder2.svg'], // Use SVG placeholders
     tags: ['Next.js', 'Tailwind CSS'],
     slug: 'portfolio-site',
   },
@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
     id: 3,
     titleKey: 'projects.project_3.title',
     descriptionKey: 'projects.project_3.description',
-    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'],
+    images: ['/placeholder1.svg', '/placeholder2.svg', '/placeholder3.svg'], // Use SVG placeholders
     tags: ['React', 'TypeScript', 'Firebase'],
     slug: 'task-management-app',
   },
@@ -36,7 +36,7 @@ export const projectsData: Project[] = [
     id: 4,
     titleKey: 'projects.project_4.title',
     descriptionKey: 'projects.project_4.description',
-    images: ['/placeholder1.jpg'],
+    images: ['/placeholder1.svg'], // Use SVG placeholders
     tags: ['JavaScript', 'APIs', 'CSS Grid'],
     slug: 'weather-dashboard',
   },
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
     id: 5,
     titleKey: 'projects.project_5.title',
     descriptionKey: 'projects.project_5.description',
-    images: ['/placeholder1.jpg', '/placeholder2.jpg'],
+    images: ['/placeholder1.svg', '/placeholder2.svg'], // Use SVG placeholders
     tags: ['Next.js', 'Markdown', 'Headless CMS'],
     slug: 'blog-platform',
   },
@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
     id: 6,
     titleKey: 'projects.project_6.title',
     descriptionKey: 'projects.project_6.description',
-    images: ['/placeholder1.jpg', '/placeholder2.jpg', '/placeholder3.jpg'],
+    images: ['/placeholder1.svg', '/placeholder2.svg', '/placeholder3.svg'], // Use SVG placeholders
     tags: ['React', 'Chart.js', 'REST APIs'],
     slug: 'social-media-dashboard',
   },

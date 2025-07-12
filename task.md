@@ -58,10 +58,12 @@
 - [x] WhatsApp link to chat with me (Link added, needs URL configuration- [x] Implement contact success/error messages in all languages (Basic messages added)
 
 ## Performance & Optimization
-- [ ] Optimize image loading with Next.js Image
-- [ ] Implement code splitting
-- [ ] Add page transitions
-- [ ] Configure SEO metadata for each language
+- [x] Optimize image loading with Next.js Image (Partially done - legacy props need fixing)
+- [x] Implement code splitting (Handled by Next.js default)
+- [x] Add page transitions (Implemented with Framer Motion)
+- [x] Configure SEO metadata for each language (Default added to layout, About page updated)
+- [ ] **Create Placeholder Images:** Create `placeholder1.svg`, `placeholder2.svg`, `placeholder3.svg` in `/public`. (Needed to fix 404 errors from `projectsData.ts`. See previous message for SVG content).
+- [x] **Fix Legacy Image Props:** Update `layout` and `objectFit` props in `Image` components (`projects/[slug].tsx`, `about.tsx`, `ProjectCard.tsx`).
 - [ ] Test performance with Lighthouse for all language versions
 
 ## Deployment

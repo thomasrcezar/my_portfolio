@@ -24,11 +24,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, t }) => {
       <div className="h-48 bg-gray-700 relative">
         {/* Placeholder for project image */}
         <Image
-          src={project.images[0]} // Use the first image for the card preview
+          src={project.images[0]} // Use the first image as the card background
           alt={t(project.titleKey)}
-          layout="fill"
-          objectFit="cover"
-          className="opacity-75"
+          fill // Use fill instead of layout="fill"
+          style={{ objectFit: 'cover' }} // Use style prop for objectFit
+          className="opacity-75" // Adjust opacity as needed
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
       </div>
